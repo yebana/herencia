@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Calculadora de Reparto de Herencia, Powered by @yebana")
+st.title("Calculadora de Reparto de Herencia")
 
 # Recoger datos básicos
 edad_viudez = st.number_input("¿Edad de la viuda/viudo en el momento del reparto de la herencia?", min_value=0, max_value=120, value=65)
