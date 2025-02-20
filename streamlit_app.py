@@ -20,9 +20,8 @@ if st.button("Calcular Reparto"):
     
     # Cálculo del usufructo según la edad del viudo/a
     porcentaje_usufructo = (89 - edad_viudez) / 100
-    # Aseguramos que el porcentaje esté entre 0 y 1
-    porcentaje_usufructo = max(0, min(1, porcentaje_usufructo))
-        
+    # Aseguramos que el porcentaje esté entre el 10% y el 70%
+    porcentaje_usufructo = max(0.10, min(0.70, porcentaje_usufructo))        
     valor_usufructo = herencia_a_repartir * porcentaje_usufructo
     
     # Cálculo para los hijos
