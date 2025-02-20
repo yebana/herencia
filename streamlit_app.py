@@ -3,9 +3,9 @@ import streamlit as st
 st.title("Calculadora de Reparto de Herencia")
 
 # Recoger datos básicos
-edad_viudez = st.number_input("¿Edad de la viuda/viudo en el momento del reparto de la herencia?", min_value=0, max_value=120, value=65)
-num_hijos = st.number_input("¿Cuántos hijos tienen?", min_value=0, max_value=20, value=2)
-herencia_total = st.number_input("¿Cuál es el monto total de la herencia (en euros)?", min_value=0.0, value=100000.0)
+edad_viudez = st.number_input("¿Edad de la viuda/viudo en el momento del reparto de la herencia?", min_value=0, max_value=120, value=89)
+num_hijos = st.number_input("¿Cuántos hijos tienen?", min_value=0, max_value=20, value=4)
+herencia_total = st.number_input("¿Cuál es el monto total de la herencia (en euros)?", min_value=0.0, value=150000.0)
 
 if st.button("Calcular Reparto"):
     # Cálculos del reparto
